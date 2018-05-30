@@ -1,0 +1,27 @@
+.flex-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  margin: 0 auto 50px auto;
+  /* justify-content: space-between; */
+  width: 85%;
+}
+
+.flex-card {
+  min-width: 400px;
+  flex: 1;
+}
+
+.flex-card:nth-of-type(1) {
+  min-width: 800px;
+}
+
+.flex-card:nth-of-type(7) {
+  min-width: 800px;
+}
+
+.flex-card-placeholder {
+  margin: 12px;
+  height: 100px;
+  background-color: var(--dark-grey);
+}

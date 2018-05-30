@@ -1,0 +1,181 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #888;
+}
+
+:root {
+    --blue: #34D1D1;
+    --purple-bg: #2F2235;
+    --mauve-bg: #3F3244;
+    --font: #ffffff;
+    --light-grey: #f2f2f2;
+    --med-grey: #d1d2d3;
+    --dark-grey: #666666;
+}
+
+header {
+  height: 50px;
+  background-color: var(--purple-bg);
+  color: var(--font);
+}
+
+header div {
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 90%;
+}
+
+.main-title {
+  font-weight: 300;
+}
+
+.main-title span {
+  color: var(--blue);
+}
+
+.student-name {
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.section-title {
+  margin: 50px 30px 60px 75px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.section-title-hr {
+  border-color: var(--light-grey);
+  margin: 5px;
+  width: 73%;
+  display: inline-block;
+}
+
+.tab-display {
+  height: 500px;
+  margin: 10px auto 80px auto;
+  width: 80%;
+}
+
+.tabs {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.tabs li {
+  flex: 1;
+}
+
+.tab-button {
+  border-width: 0 0px 1px 0;
+  border-style: solid;
+  border-color: transparent white var(--med-grey) transparent;
+  background-color: var(--light-grey);
+  height: 53px;
+  width:100%;
+  outline: none;
+}
+
+button.active {
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: var(--med-grey);
+  background-color: white;
+}
+
+
+.tab-content {
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: var(--med-grey);
+  z-index: 2;
+  box-sizing: border-box;
+  display: none;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 20px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 100%;
+}
+
+.tab-text {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 30px;
+  padding-right: 10px;
+  height: 352px;
+  overflow-y: auto;
+  padding-top: 15px;
+  vertical-align: top;
+  width: 62%;
+}
+
+.tab-text hr {
+  margin: 20px 0 30px 0;
+}
+
+.placeholder-img {
+  background-image: url(https://placekitten.com/g/300/400);
+  background-position: center;
+  display: inline-block;
+  height: 400px;
+  width: 30%;
+}
+
+#view-accordion-code {
+  color: white;
+  display: block;
+  background-color: var(--mauve-bg);
+  font-size: 18px;
+  font-weight: 300;
+  height: 55px;
+  margin: auto;
+  width: 400px;
+}
+
+.tab-code {
+  display: none;
+  grid-template-columns: 300px 300px 300px;
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 10px auto;
+  width: 65%;
+}
+
+textarea {
+  resize: none;
+  width: 350px;
+  height: 200px;
+}
