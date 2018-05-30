@@ -152,7 +152,7 @@ button.active {
   width: 30%;
 }
 
-#view-accordion-code {
+.show-code {
   color: white;
   display: block;
   background-color: var(--mauve-bg);
@@ -163,19 +163,23 @@ button.active {
   width: 400px;
 }
 
+.code-display {
+  margin-bottom: 30px;
+}
+
 .tab-code {
   display: none;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 350px 350px 350px;
   grid-column-gap: 5px;
   grid-row-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
-  margin: 10px auto;
-  width: 65%;
+  margin: 20px auto;
+  width: 80%;
 }
 
 textarea {
   resize: none;
-  width: 350px;
+  width: 340px;
   height: 200px;
 }
