@@ -1,12 +1,18 @@
 document.getElementById('view-flex-card-code').addEventListener('click', function() {
   fillFlexCardCodeView();
-  let codeTab = this.nextElementSibling;
-  if (codeTab.style.display === "none") {
-    codeTab.style.display = "grid"
+  let width = window.innerWidth
+  if (width < 1220) {
+    window.location='https://codepen.io/Katastrophie/pen/qKEKoe';
   } else {
-    codeTab.style.display = "none"
+    let codeTab = this.nextElementSibling;
+    if (codeTab.style.display === "none") {
+      codeTab.style.display = "grid"
+    } else {
+      codeTab.style.display = "none"
+    }
   }
 })
+
 
 const fillFlexCardCodeView = () => {
   let HTMLCode =
@@ -51,6 +57,7 @@ const fillFlexCardCodeView = () => {
   .flex-card {
     border: 1px solid var(--med-grey);
     box-sizing: border-box;
+    height: 300px;
     margin: 12px;
     min-width: 30%;
     flex: 1;
@@ -70,8 +77,9 @@ const fillFlexCardCodeView = () => {
   }
 
   .flex-card-placeholder {
-    height: 300px;
+    height: 234px;
     background-color: var(--light-grey);
+    background-size: 100%;
   }
 
   @media only screen and (max-width: 700px) {
@@ -98,6 +106,7 @@ const fillFlexCardCodeView = () => {
       min-width: 100%;
     }
   }
+
 `
   let jsCode = `No Javascript Needed!`
   document.getElementById('flex-card-html-code').innerHTML = HTMLCode;

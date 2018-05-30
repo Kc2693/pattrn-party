@@ -1,0 +1,95 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #888;
+}
+
+:root {
+    --blue: #34D1D1;
+    --purple-bg: #2F2235;
+    --mauve-bg: #3F3244;
+    --font: #ffffff;
+    --light-grey: #f2f2f2;
+    --med-grey: #d1d2d3;
+    --dark-grey: #666666;
+    --weird-grey: #E6E6E6;
+}
+
+
+
+header {
+  height: 50px;
+  background-color: var(--purple-bg);
+  color: var(--font);
+}
+
+header div {
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 90%;
+}
+
+.main-title {
+  font-weight: 300;
+}
+
+.main-title span {
+  color: var(--blue);
+}
+
+.student-name {
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.show-code {
+  color: white;
+  display: block;
+  background-color: var(--mauve-bg);
+  font-size: 18px;
+  font-weight: 300;
+  height: 55px;
+  margin: auto;
+  width: 400px;
+}
+
+.code-display {
+  margin-bottom: 30px;
+}
+
+.tab-code {
+  display: none;
+  grid-template-columns: 350px 350px 350px;
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 20px auto;
+  width: 80%;
+}
+
+textarea {
+  resize: none;
+  width: 340px;
+  height: 200px;
+}

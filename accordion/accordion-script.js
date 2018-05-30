@@ -1,14 +1,19 @@
 window.onload = function() {
   accordionTab();
-  fillCodeViews();
+  fillAccordionCodeView();
 };
 
 document.getElementById('view-accordion-code').addEventListener('click', function() {
-  let codeTab = this.nextElementSibling;
-  if (codeTab.style.display === "none") {
-    codeTab.style.display = "grid"
+  let width = window.innerWidth
+  if (width < 1220) {
+    window.location='https://codepen.io/Katastrophie/pen/aKzKyX';
   } else {
-    codeTab.style.display = "none"
+    let codeTab = this.nextElementSibling;
+    if (codeTab.style.display === "none") {
+      codeTab.style.display = "grid"
+    } else {
+      codeTab.style.display = "none"
+    }
   }
 })
 
@@ -39,7 +44,7 @@ const clearOpenTabs = () => {
   })
 }
 
-const fillCodeViews = () => {
+const fillAccordionCodeView = () => {
   let HTMLCode = `<div class="tab-display">
     <ul class="tabs" role="tablist">
       <li>

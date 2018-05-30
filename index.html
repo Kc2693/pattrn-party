@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./main-styles.css">
     <link rel="stylesheet" type="text/css" href="./accordion/accordion-style.css">
     <link rel="stylesheet" type="text/css" href="./flexible-cards/flex-style.css">
+    <link rel="stylesheet" type="text/css" href="./header-bar/header-bar-style.css">
     <title>Pattrn-Party</title>
   </head>
   <body>
@@ -152,7 +154,22 @@
         </div>
       </div>
     </section>
+    <section>
+      <h1 class="section-title" id="header-bar-section-title">HEADER BAR</h1>
+      <hr class="section-title-hr"/>
+      <header class="header-bar">
+        <div class="header-icon"></div>
+          <a href="google.com">Navigation Link 1</a>
+          <a href="google.com">Navigation Link 2</a>
+          <a href="google.com">Navigation Link 3</a>
+        <span class="input-span"><input type="text" placeholder="🔍 Search"/></span>
+      </header>
+      <div class="header-bar-code-display">
+        <button class="show-code" id="view-accordion-code">VIEW CODE</button>
+      </div>
+    </section>
     <script src="./accordion/accordion-script.js"></script>
     <script src="./flexible-cards/flex-script.js"></script>
+    <script src="./header-bar/header-bar-script.js"></script>
   </body>
 </html>

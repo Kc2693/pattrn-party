@@ -1,0 +1,143 @@
+.header-bar {
+  background-color: var(--med-grey);
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: center;
+  height: 70px;
+  padding: 15px 0;
+  margin: 30px auto;
+  width: 70%;
+}
+
+.header-icon {
+  background-color: var(--dark-grey);
+  border-radius: 100%;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+}
+
+.header-bar a {
+  vertical-align: top;
+  display: inline-block;
+  margin: 10px auto;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--dark-grey);
+}
+
+.input-span {
+  margin: 10px auto;
+}
+
+.input-span input {
+  background-color: var(--light-grey);
+  display: inline-block;
+  border: 1px solid var(--dark-grey);
+  font-size: 20px;
+  font-weight: 200;
+  height: 35px;
+  width: 200px;
+}
+
+.input-span input::placeholder {
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 10px;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-bar a {
+    font-size: 18px;
+  }
+  .input-span input::placeholder {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .header-bar a {
+    font-size: 16px;
+  }
+  .input-span input::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .header-bar a {
+    font-size: 14px;
+  }
+  .input-span input::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #header-bar-section-title {
+    width: 140px;
+  }
+
+  .header-bar {
+    display: block;
+    position: relative;
+    width: 90%;
+  }
+
+  .header-bar a {
+    background-color: var(--weird-grey);
+    box-sizing: border-box;
+    display: none;
+    height: 70px;
+    margin: 0;
+    padding: 40px 0 0 20px;
+    width: 100%;
+  }
+
+  .input-span {
+    display: none;
+  }
+
+  .header-icon {
+    margin-left: 20px
+  }
+
+  .header-bar::after {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    content: "MENU";
+    color: var(--dark-grey);
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .toggle-mobile-menu {
+    height: 350px;
+  }
+
+  .menu-active {
+    height: 20px;
+    display: block !important;
+    font-size: 20px !important;
+    width: 160px;
+    margin: auto;
+  }
+
+  .input-span {
+    background-color: var(--weird-grey);
+    box-sizing: border-box;
+    height: 80px;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .input-span input {
+    display: block;
+    width: 95% !important;
+    margin: 0 auto;
+  }
+}
